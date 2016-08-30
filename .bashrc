@@ -649,3 +649,9 @@ _isroot=false
     fi
   #}}}
 #}}}
+#---> 20160829 add 
+if [ -f ${HOME}/.bash_aliases ];then
+    source ${HOME}/.bash_aliases
+fi
+
+export PATH="$HOME/anaconda3/bin:$PATH"
